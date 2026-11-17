@@ -1,0 +1,192 @@
+
+.header {
+  width: 100%;
+  background-color: var(--white);
+  padding: 20px 5% 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 500px;
+  background-color: var(--light-gray-3);
+  border-radius: 8px;
+  padding: 4px 12px;
+}
+
+.header-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 13px;
+  color: var(--dark-gray-2);
+}
+
+.header-search input::placeholder {
+  color: var(--light-gray);
+}
+
+.header-search button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: var(--dark-gray-2);
+  cursor: pointer;
+  padding: 5px;
+}
+
+.header-search button:hover {
+  color: var(--primary);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  white-space: nowrap;
+}
+
+.header-actions a {
+  text-decoration: underline;
+  color: var(--dark-gray-2);
+  font-size: 16px;
+}
+
+.login-button {
+  width: 114px;
+  height: 40px;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.cart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.cart-button img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.header-navigation {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 22px 0 15px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.header-navigation a {
+  font-size: 14px;
+  color: var(--dark-gray-2);
+  padding-bottom: 7px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.header-navigation a:hover {
+  color: var(--primary);
+}
+
+.header-navigation a.active {
+  color: var(--primary);
+  font-weight: 700;
+  border-bottom: 2px solid var(--primary);
+}
+
+/* Responsividade */
+
+@media (max-width: 900px) {
+  .header-container {
+    gap: 15px;
+  }
+
+  .header-actions {
+    gap: 12px;
+  }
+
+  .header-search {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 15px 4% 0;
+  }
+
+  .header-container {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .header-search {
+    order: 3;
+    flex-basis: 100%;
+    max-width: none;
+  }
+
+  .header-actions {
+    margin-left: auto;
+    gap: 10px;
+  }
+
+  .header-actions a {
+    font-size: 12px;
+  }
+
+  .login-button {
+    width: auto;
+    height: 38px;
+    padding: 0 13px;
+  }
+
+  .cart-button img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .header-navigation {
+    gap: 18px;
+    overflow-x: auto;
+    padding: 15px 0 12px;
+  }
+
+  .header-navigation a {
+    white-space: nowrap;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,87 @@
+
+.my-orders-page {
+  width: 100%;
+  min-height: calc(100vh - 180px);
+  padding: 40px 5%;
+  background: #f7f6fc;
+}
+
+.my-orders-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.my-orders-header {
+  margin-bottom: 30px;
+}
+
+.my-orders-header h1 {
+  margin-bottom: 10px;
+  color: var(--dark-gray);
+  font-size: 28px;
+}
+
+.my-orders-header p {
+  color: var(--light-gray);
+  font-size: 14px;
+}
+
+.my-orders-content {
+  min-height: 350px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.my-orders-icon {
+  margin-bottom: 20px;
+  font-size: 55px;
+}
+
+.my-orders-content h2 {
+  margin-bottom: 12px;
+  color: var(--dark-gray);
+  font-size: 21px;
+}
+
+.my-orders-content p {
+  max-width: 400px;
+  margin-bottom: 25px;
+  color: var(--light-gray);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.my-orders-button {
+  padding: 14px 25px;
+  border-radius: 5px;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.my-orders-button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+  .my-orders-page {
+    padding: 25px 4%;
+  }
+
+  .my-orders-header h1 {
+    font-size: 24px;
+  }
+
+  .my-orders-content h2 {
+    font-size: 18px;
+  }
+}

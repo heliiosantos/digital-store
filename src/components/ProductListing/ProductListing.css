@@ -1,0 +1,73 @@
+
+/* =========================
+   LISTAGEM DE PRODUTOS
+========================= */
+
+.products-section {
+  width: 100%;
+  min-width: 0;
+}
+
+.products-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.products-header p {
+  font-size: 13px;
+  color: var(--dark-gray-2);
+}
+
+.products-header select {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  background: var(--white);
+  color: var(--dark-gray-2);
+  font-size: 12px;
+}
+
+/* =========================
+   GRID DE PRODUTOS
+========================= */
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px 12px;
+}
+
+/* =========================
+   RESULTADO VAZIO
+========================= */
+
+.no-products {
+  color: var(--dark-gray-2);
+  font-size: 14px;
+  padding: 25px 0;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .products-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 12px;
+  }
+}
